@@ -1,0 +1,35 @@
+.navigation-header {
+  display: none;
+
+  @media screen and (min-width: 700px)
+  {
+    display: inline-block;
+    min-height: 80px;
+    min-width: 100vw;
+    background-color: lighten($color-background-dark, 15%);
+  }
+}
+
+.navigation-links
+{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    li {
+        min-width: 120px;
+    }
+    li:hover {
+        background-color: grey;
+        border-bottom: 1px solid black;
+        transform: scale(1.05);
+    }
+    li a
+    {
+        padding: 15px;
+        font-family: $font-sans;
+        font-size: 2em;
+        line-height: 2;
+        color: white;
+    }
+}

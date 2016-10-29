@@ -1,0 +1,15 @@
+#hero
+{
+  min-height: 100vh;
+  background: url('../images/aspen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-text {
+  font-family: $font-serif;
+  color: $color-hero-text;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
