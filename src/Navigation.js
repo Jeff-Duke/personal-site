@@ -6,6 +6,7 @@ const Navigation = () => {
         <div className="navigation-header">
             <ul className="navigation-links">
                 <li> <Link to="/"> Home </Link> </li>
+                <li> <Link to="/Projects"> Projects </Link> </li>
             </ul>
         </div>
     );

@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Arvo");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +22,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -45,32 +48,91 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
+#hero {
+  min-height: 100vh;
+  background: url("../images/aspen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
-.App {
-  text-align: center;
-  background: red; }
+.hero-text {
+  font-family: "Arvo", serif;
+  color: #db881f;
+  font-size: 1.3em;
+  line-height: 1.2; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+.navigation-header {
+  display: none; }
+  @media screen and (min-width: 700px) {
+    .navigation-header {
+      display: inline-block;
+      min-height: 80px;
+      min-width: 100vw;
+      background-color: #4e4e4e; } }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
+.navigation-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; }
+  .navigation-links li {
+    min-width: 120px; }
+  .navigation-links li:hover {
+    background-color: grey;
+    border-bottom: 1px solid black;
+    transform: scale(1.05); }
+  .navigation-links li a {
+    padding: 15px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2em;
+    line-height: 2;
+    color: white; }
 
-.App-intro {
-  font-size: large; }
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.clearfix {
+  overflow: auto;
+  zoom: 1; }
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 450px;
+  margin: 10px;
+  border: solid 1px lightgrey;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  align-items: center;
+  justify-content: center; }
+
+.card-photo {
+  width: 300px;
+  height: 300px;
+  margin-top: 15px; }
+
+.card-text {
+  font-family: "Noto Sans", sans-serif;
+  width: 300px;
+  height: 125px;
+  background-color: white; }
+  .card-text h3 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    color: black; }
+  .card-text p {
+    margin-top: 10px; }
+
+.card-links {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=index.css.map */
