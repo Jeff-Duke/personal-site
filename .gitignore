@@ -5,3 +5,4 @@ public/script.js
 test/specs/selenium.jar
 
 src/styles/.sass-cache
+src/styles/.sass-cache/*
