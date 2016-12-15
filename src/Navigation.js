@@ -5,8 +5,9 @@ const Navigation = () => {
     return(
         <div className="navigation-header">
             <ul className="navigation-links">
-                <li> <Link to="/"> Home </Link> </li>
-                <li> <Link to="/Projects"> Projects </Link> </li>
+                <li className="nav-link"> <Link to="/"> Home </Link> </li>
+                <li className="nav-link"> <Link to="/Projects"> Projects </Link> </li>
+                <li className="nav-link"> <Link to="/Contact"> Contact </Link> </li>
             </ul>
         </div>
     );

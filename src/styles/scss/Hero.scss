@@ -1,15 +1,18 @@
 #hero
 {
   min-height: 100vh;
-  background: url('../images/aspen.jpg');
+  background: url('../../../public/images/aspen.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 .hero-text {
+  padding: 15px;
+  background: rgba(40,40,40, .9);
   font-family: $font-serif;
   color: $color-hero-text;
   font-size: 1.3em;
-  line-height: 1.2;
+  line-height: 1.4;
 }

@@ -50,16 +50,19 @@ table {
 
 #hero {
   min-height: 100vh;
-  background: url("../images/aspen.jpg");
+  background: url("../../../public/images/aspen.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-position: center; }
 
 .hero-text {
+  padding: 15px;
+  background: rgba(40, 40, 40, 0.9);
   font-family: "Arvo", serif;
-  color: #db881f;
+  color: #E69762;
   font-size: 1.3em;
-  line-height: 1.2; }
+  line-height: 1.4; }
 
 .navigation-header {
   display: none; }
@@ -87,6 +90,9 @@ table {
     font-size: 2em;
     line-height: 2;
     color: white; }
+
+.nav-link {
+  min-height: 80px; }
 
 #projects {
   display: flex;
@@ -126,6 +132,11 @@ table {
     color: black; }
   .card-text p {
     margin-top: 10px; }
+
+.card-title {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold; }
 
 .card-links {
   font-family: "Noto Sans", sans-serif;
