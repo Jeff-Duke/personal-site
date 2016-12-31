@@ -2,8 +2,26 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Arvo");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,56 +67,124 @@ table {
   border-spacing: 0; }
 
 #hero {
-  min-height: 100vh;
-  background: url("../../../public/images/aspen.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; }
+  min-height: 300px; }
 
 .hero-text {
-  padding: 15px;
+  padding: 36px;
   background: rgba(40, 40, 40, 0.9);
-  font-family: "Arvo", serif;
-  color: #E69762;
-  font-size: 1.3em;
-  line-height: 1.4; }
+  font-family: "Archivo Black", serif;
+  color: #FF8C00;
+  font-size: 32px;
+  line-height: 1.4;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 480px;
+  width: 75vw;
+  border-radius: 3px;
+  margin-top: 50px;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.hero {
+  min-height: 85vh;
+  min-width: 100vw;
+  background: url("../../../public/images/planks.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero-link {
+  margin-top: 25px;
+  font-family: inherit;
+  color: #FFF; }
 
 .navigation-header {
   display: none; }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 44em) {
     .navigation-header {
       display: inline-block;
-      min-height: 80px;
+      min-height: 100px;
       min-width: 100vw;
-      background-color: #4e4e4e; } }
+      background: url("../../../public/images/topo.jpg");
+      background-size: cover;
+      position: fixed;
+      border-bottom: 1px solid #FFF; } }
 
 .navigation-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row; }
+  flex-direction: row;
+  min-width: 120px; }
   .navigation-links li {
-    min-width: 120px; }
-  .navigation-links li:hover {
-    background-color: grey;
-    border-bottom: 1px solid black;
-    transform: scale(1.05); }
-  .navigation-links li a {
     padding: 15px;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 2em;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 2.5em;
     line-height: 2;
     color: white; }
+  .navigation-links li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
+  .navigation-links li:hover:after {
+    width: 85%;
+    background: #FFF; }
+  .navigation-links .nav-link {
+    min-height: 80px; }
 
-.nav-link {
-  min-height: 80px; }
+#mobile-menu-expanded {
+  display: none;
+  min-height: 100px;
+  min-width: 100vw;
+  background: url("../../../public/images/topo.jpg");
+  background-size: cover;
+  position: fixed;
+  border-bottom: 1px solid #FFF; }
+  @media screen and (min-width: 700px) {
+    #mobile-menu-expanded {
+      display: none; } }
+  #mobile-menu-expanded .mobile-menu-links li {
+    padding: 5px;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 2.5em;
+    line-height: 2;
+    color: white; }
+  #mobile-menu-expanded .mobile-menu-links li:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
+  #mobile-menu-expanded .mobile-menu-links li:hover:after {
+    width: 50%;
+    background: #FFF; }
+  #mobile-menu-expanded .mobile-menu-links .nav-link {
+    min-height: 40px; }
+
+#mobile-menu-icon {
+  height: 100px;
+  width: 100px;
+  background-color: #FFEBCD;
+  display: inline-block; }
 
 #projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 25px; }
+  padding: 24px 0 60px 0;
+  max-height: 75vh;
+  min-height: 50vh;
+  overflow-x: scroll; }
 
 .clearfix {
   overflow: auto;
@@ -108,13 +194,14 @@ table {
   display: flex;
   flex-direction: column;
   width: 350px;
-  height: 450px;
+  height: 500px;
   margin: 10px;
   border: solid 1px lightgrey;
   border-radius: 5px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  box-sizing: border-box; }
 
 .card-photo {
   width: 300px;
@@ -122,16 +209,18 @@ table {
   margin-top: 15px; }
 
 .card-text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   width: 300px;
   height: 125px;
   background-color: white; }
   .card-text h3 {
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Tenor Sans", sans-serif;
     font-weight: bold;
-    color: black; }
+    color: black;
+    padding: 10px; }
   .card-text p {
-    margin-top: 10px; }
+    margin-bottom: 15px;
+    padding: 10px; }
 
 .card-title {
   margin-top: 10px;
@@ -139,11 +228,33 @@ table {
   font-weight: bold; }
 
 .card-links {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   font-weight: bold;
   display: flex;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 35px;
   justify-content: space-around; }
+
+.footer {
+  background: url("../../../public/images/topo.jpg");
+  background-size: cover;
+  color: #FFF;
+  height: 65px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #FFF; }
+  .footer a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 1.2em; }
+
+.contact-container {
+  padding-top: 150px; }
+
+body {
+  min-width: 320px;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=index.css.map */

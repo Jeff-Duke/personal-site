@@ -1,39 +1,98 @@
+@import '_variables';
 .navigation-header {
   display: none;
 
-  @media screen and (min-width: 700px)
+  @media screen and (min-width: 44em)
   {
     display: inline-block;
-    min-height: 80px;
+    min-height: 100px;
     min-width: 100vw;
-    background-color: lighten($color-background-dark, 15%);
+    background: url('../../../public/images/topo.jpg');
+    // background image from https://www.kinddesign.co/
+    background-size: cover;
+    position: fixed;
+    border-bottom: 1px solid #FFF;
   }
 }
 
 .navigation-links
 {
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    li {
-        min-width: 120px;
-    }
-    li:hover {
-        background-color: grey;
-        border-bottom: 1px solid black;
-        transform: scale(1.05);
-    }
-    li a
+    min-width: 120px;
+    
+    li
     {
         padding: 15px;
         font-family: $font-sans;
-        font-size: 2em;
+        font-size: 2.5em;
         line-height: 2;
         color: white;
     }
+    li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    }
+    li:hover:after {
+        width: 85%;
+        background: #FFF;
+    }
+    .nav-link {
+      min-height: 80px;
+    }
 }
 
-.nav-link {
-  min-height: 80px;
+#mobile-menu-expanded {
+  display: none;
+  min-height: 100px;
+  min-width: 100vw;
+  background: url('../../../public/images/topo.jpg');
+  // background image from https://www.kinddesign.co/
+  background-size: cover;
+  position: fixed;
+  border-bottom: 1px solid #FFF;
+  @media screen and (min-width: 700px)
+  {
+    display:none;
+  }
+  .mobile-menu-links
+  {   
+    li
+    {
+        padding: 5px;
+        font-family: $font-sans;
+        font-size: 2.5em;
+        line-height: 2;
+        color: white;
+    }
+    li:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    }
+    li:hover:after {
+        width: 50%;
+        background: #FFF;
+    }
+    .nav-link {
+      min-height: 40px;
+    }
+  }
+}
+
+#mobile-menu-icon {
+  height: 100px;
+  width: 100px;
+  background-color: #FFEBCD;
+  display: inline-block;
 }
