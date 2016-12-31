@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+.footer {
+  background: url("../../../public/images/topo.jpg");
+  background-size: cover;
+  color: #FFF;
+  height: 65px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #FFF; }
+  .footer a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Tenor Sans", sans-serif;
+    font-size: 1.2em; }
+
+/*# sourceMappingURL=Footer.css.map */
