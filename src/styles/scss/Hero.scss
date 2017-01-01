@@ -18,13 +18,12 @@
   height: 480px;
   width: 75vw;
   border-radius: 3px;
-  margin-top: 50px;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
 .hero {
-  min-height: 85vh;
+  min-height: 100vh;
   min-width: 100vw;
   background: url('../../../public/images/planks.jpg');
   background-size: cover;

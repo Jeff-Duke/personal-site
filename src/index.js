@@ -6,7 +6,6 @@ import App from './components/App';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 
 const Root = () => {
   return (
@@ -16,7 +15,6 @@ const Root = () => {
         <Match exactly pattern="/" component={ App } />
         <Match exactly pattern="/projects" component={ Projects } />
         <Match exactly pattern="/contact" component={ Contact } />
-        <Footer />
       </div>
     </BrowserRouter>
   )

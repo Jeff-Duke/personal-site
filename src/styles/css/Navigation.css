@@ -2,10 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
-.navigation-header {
+#navBar {
+  box-sizing: border-box; }
+
+.navigationHeader {
   display: none; }
   @media screen and (min-width: 44em) {
-    .navigation-header {
+    .navigationHeader {
       display: inline-block;
       min-height: 100px;
       min-width: 100vw;
@@ -14,19 +17,20 @@
       position: fixed;
       border-bottom: 1px solid #FFF; } }
 
-.navigation-links {
+.navigationLinks {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  min-width: 120px; }
-  .navigation-links li {
-    padding: 15px;
+  min-width: 120px;
+  min-height: 100px; }
+  .navigationLinks li {
+    padding: 0 15px 0 15px;
     font-family: "Tenor Sans", sans-serif;
     font-size: 2.5em;
     line-height: 2;
     color: white; }
-  .navigation-links li:after {
+  .navigationLinks li:after {
     content: '';
     display: block;
     margin: auto;
@@ -34,46 +38,79 @@
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  .navigation-links li:hover:after {
+  .navigationLinks li:hover:after {
     width: 85%;
-    background: #FFF; }
-  .navigation-links .nav-link {
+    background: #FF8C00; }
+  .navigationLinks .nav-link {
     min-height: 80px; }
 
-#mobile-menu-expanded {
+#mobileMenuExpanded {
   display: none;
   min-height: 100px;
   min-width: 100vw;
   background: url("../../../public/images/topo.jpg");
   background-size: cover;
   position: fixed;
-  border-bottom: 1px solid #FFF; }
+  border-bottom: 1px solid #FFF;
+  z-index: 5; }
   @media screen and (min-width: 700px) {
-    #mobile-menu-expanded {
+    #mobileMenuExpanded {
       display: none; } }
-  #mobile-menu-expanded .mobile-menu-links li {
+  #mobileMenuExpanded .mobileMenuLinks li {
     padding: 5px;
     font-family: "Tenor Sans", sans-serif;
-    font-size: 2.5em;
-    line-height: 2;
+    font-size: 2em;
+    line-height: 1.75;
     color: white; }
-  #mobile-menu-expanded .mobile-menu-links li:after {
+  #mobileMenuExpanded .mobileMenuLinks li:after {
     content: '';
     display: block;
     height: 3px;
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  #mobile-menu-expanded .mobile-menu-links li:hover:after {
-    width: 50%;
-    background: #FFF; }
-  #mobile-menu-expanded .mobile-menu-links .nav-link {
+  #mobileMenuExpanded .mobileMenuLinks li:hover:after {
+    width: 25%;
+    background: #FF8C00; }
+  #mobileMenuExpanded .mobileMenuLinks .nav-link {
     min-height: 40px; }
+  #mobileMenuExpanded #closeButton {
+    color: #FF8C00;
+    font-size: 2.5em;
+    font-family: "Tenor Sans", sans-serif;
+    position: absolute;
+    right: 0;
+    margin: 25px;
+    display: inline-block; }
 
-#mobile-menu-icon {
+.mobileMenuHeader {
+  background: url("../../../public/images/topo.jpg");
+  background-size: cover;
+  position: fixed;
   height: 100px;
-  width: 100px;
-  background-color: #FFEBCD;
-  display: inline-block; }
+  border-bottom: 1px solid #FFF;
+  width: 100vw;
+  display: flex;
+  flex-direction: row; }
+  @media screen and (min-width: 44em) {
+    .mobileMenuHeader {
+      display: none; } }
+
+#mobileMenuIcon {
+  height: 100px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 25px; }
+
+#menuText {
+  font-family: "Tenor Sans", sans-serif;
+  color: #FFF;
+  font-size: 2.5em;
+  margin-right: 25px;
+  position: relative;
+  bottom: 15px; }
 
 /*# sourceMappingURL=Navigation.css.map */
