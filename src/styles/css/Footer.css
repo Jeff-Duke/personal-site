@@ -11,10 +11,11 @@
   position: fixed;
   bottom: 0;
   border-top: 1px solid #FFF; }
-  .footer a {
-    text-decoration: none;
-    color: #FFF;
-    font-family: "Tenor Sans", sans-serif;
-    font-size: 1.2em; }
+
+#github {
+  background: url("../../../public/images/github-orange.svg");
+  height: 60px;
+  width: 60px;
+  z-index: 3; }
 
 /*# sourceMappingURL=Footer.css.map */

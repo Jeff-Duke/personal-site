@@ -1,44 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router';
+import hamburgerIcon from '../../public/images/hamburger-icon.svg';
 
 const Navigation = () => {
     const toggleMenuOpen = (e) => {
-        const mobileMenu = document.getElementById('mobile-menu-expanded');
-        e.target.style.display = 'none';
-        mobileMenu.style.display = 'inline-block';
+        e.preventDefault();
+        document.getElementById('mobileMenuExpanded').style.display = 'inline-block';
     };
 
     const toggleMenuClosed = (e) => {
-        const mobileMenu = document.getElementById('mobile-menu-expanded');
-        const mobileIcon = document.getElementById('mobile-menu-icon');
-        mobileMenu.style.display = 'none';
-        mobileIcon.style.display = 'inline-block';
+        e.preventDefault();
+        document.getElementById('mobileMenuExpanded').style.display = 'none';
     };
 
     return(
-        <section>
-            <article className="navigation-header">
-                <ul className="navigation-links">
+        <section id="navBar">
+            <article className="navigationHeader">
+                <ul className="navigationLinks">
                     <Link to="/"> <li className="nav-link"> Home </li> </Link>
                     <Link to="/Projects"> <li className="nav-link"> Projects </li> </Link>
                     <Link to="/Contact"> <li className="nav-link"> Contact  </li> </Link>
                 </ul>
             </article>
-            <article id="mobile-menu-expanded" 
+            <article id="mobileMenuExpanded" 
                 onClick={(e) => toggleMenuClosed(e)} 
-                onBlur={(e) => {console.log('blurry', e.target)}}
-                onChange={(e) => {console.log('changes', e.target)}}
                 >
-                <ul className="mobile-menu-links">
+                <a href="" id="closeButton" onClick={(e) => toggleMenuClosed(e)}>X</a>
+                <ul className="mobileMenuLinks">
                     <Link to="/"> <li className="nav-link"> Home </li> </Link>
                     <Link to="/Projects"> <li className="nav-link"> Projects </li> </Link>
                     <Link to="/Contact"> <li className="nav-link"> Contact  </li> </Link>
                 </ul>
             </article>
-            <article className="mobile-menu-header">
-                <div id="mobile-menu-icon" onClick={(e) => {toggleMenuOpen(e)}}>
-                    <p>Menu</p>
-                </div>
+            <article className="mobileMenuHeader">
+                <a 
+                    href="" 
+                    id="mobileMenuIcon" 
+                    onClick={(e) => {toggleMenuOpen(e)}}>
+                <span id="menuText">
+                Menu
+                </span>
+                <img 
+                    src={hamburgerIcon} alt={"menu-icon"}
+                />
+                </a>
+                
             </article>
         </section>
     );
