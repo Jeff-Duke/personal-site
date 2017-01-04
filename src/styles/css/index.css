@@ -22,6 +22,10 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,7 +77,8 @@ table {
   padding: 36px;
   font-family: "Tenor Sans", sans-serif;
   color: #FFF;
-  font-size: 32px;
+  font-size: 36px;
+  margin-top: 100px;
   line-height: 1.4;
   display: flex;
   text-align: center;
@@ -221,7 +226,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 120px 0 60px 0;
+  padding: 150px 0 60px 0;
   height: 100vh;
   overflow-x: scroll;
   background: url("../../../public/images/woodgrain.jpg");
@@ -300,7 +305,7 @@ table {
   font-size: 2.5em;
   padding: 20px;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 8px;
   color: white; }
 
 .contact-label {
@@ -323,7 +328,44 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 36px; }
+  margin-bottom: 8px; }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 480px;
+  margin: 0 auto 0 auto;
+  font-size: 28px; }
+  .contactForm label {
+    margin-bottom: 15px; }
+  .contactForm input {
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-bottom: 20px;
+    font-size: 28px;
+    padding: 5px;
+    background: #DDD; }
+  .contactForm textarea {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-size: 18px;
+    padding: 10px;
+    background: #DDD; }
+
+.emailButton {
+  height: 40px;
+  width: 150px;
+  background: #282828;
+  color: #FF8C00;
+  font-size: 24px;
+  margin: 24px auto 0 auto;
+  border: 1px solid #DDD;
+  border-radius: 3px; }
 
 body {
   min-width: 320px;
