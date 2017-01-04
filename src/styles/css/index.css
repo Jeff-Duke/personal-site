@@ -71,9 +71,8 @@ table {
 
 .hero-text {
   padding: 36px;
-  background: rgba(40, 40, 40, 0.9);
-  font-family: "Archivo Black", serif;
-  color: #FF8C00;
+  font-family: "Tenor Sans", sans-serif;
+  color: #FFF;
   font-size: 32px;
   line-height: 1.4;
   display: flex;
@@ -90,7 +89,7 @@ table {
 .hero {
   min-height: 100vh;
   min-width: 100vw;
-  background: url("../../../public/images/planks.jpg");
+  background: url("../../../public/images/woodgrain.jpg");
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -99,8 +98,8 @@ table {
 
 .hero-link {
   margin-top: 25px;
-  font-family: inherit;
-  color: #FFF; }
+  font-family: "Archivo Black", serif;
+  color: #FF8C00; }
 
 #navBar {
   box-sizing: border-box; }
@@ -115,7 +114,8 @@ table {
       background: url("../../../public/images/topo.jpg");
       background-size: cover;
       position: fixed;
-      border-bottom: 1px solid #FFF; } }
+      border-bottom: 2px solid #FFF;
+      z-index: 10; } }
 
 .navigationLinks {
   display: flex;
@@ -126,8 +126,9 @@ table {
   min-height: 100px; }
   .navigationLinks li {
     padding: 0 15px 0 15px;
+    margin-top: 20px;
     font-family: "Tenor Sans", sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 2;
     color: white; }
   .navigationLinks li:after {
@@ -151,8 +152,8 @@ table {
   background: url("../../../public/images/topo.jpg");
   background-size: cover;
   position: fixed;
-  border-bottom: 1px solid #FFF;
-  z-index: 5; }
+  border-bottom: 2px solid #FFF;
+  z-index: 10; }
   @media screen and (min-width: 700px) {
     #mobileMenuExpanded {
       display: none; } }
@@ -170,17 +171,18 @@ table {
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
   #mobileMenuExpanded .mobileMenuLinks li:hover:after {
-    width: 25%;
+    width: 60%;
     background: #FF8C00; }
   #mobileMenuExpanded .mobileMenuLinks .nav-link {
-    min-height: 40px; }
+    min-height: 40px;
+    width: 50vw; }
   #mobileMenuExpanded #closeButton {
     color: #FF8C00;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: "Tenor Sans", sans-serif;
     position: absolute;
     right: 0;
-    margin: 25px;
+    top: 15px;
     display: inline-block; }
 
 .mobileMenuHeader {
@@ -191,7 +193,8 @@ table {
   border-bottom: 1px solid #FFF;
   width: 100vw;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  z-index: 4; }
   @media screen and (min-width: 44em) {
     .mobileMenuHeader {
       display: none; } }
@@ -208,35 +211,43 @@ table {
 #menuText {
   font-family: "Tenor Sans", sans-serif;
   color: #FFF;
-  font-size: 2.5em;
-  margin-right: 25px;
+  font-size: 2em;
+  margin-right: 30px;
   position: relative;
-  bottom: 15px; }
+  bottom: 10px;
+  right: -15px; }
 
 #projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 24px 0 60px 0;
-  height: 80vh;
-  overflow-x: scroll; }
+  padding: 120px 0 60px 0;
+  height: 100vh;
+  overflow-x: scroll;
+  background: url("../../../public/images/woodgrain.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .clearfix {
   overflow: auto;
   zoom: 1; }
 
 .content-card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: flex;
   flex-direction: column;
   width: 350px;
   height: 500px;
   margin: 10px;
-  border: solid 1px lightgrey;
   border-radius: 5px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: #FFF; }
+
+.content-card:hover {
+  transform: scale(1.025);
+  z-index: 1; }
 
 .card-photo {
   width: 300px;
@@ -255,7 +266,9 @@ table {
     padding: 10px; }
   .card-text p {
     margin-bottom: 15px;
-    padding: 10px; }
+    padding: 10px;
+    text-decoration: none;
+    color: black; }
 
 .card-title {
   margin-top: 10px;
@@ -270,44 +283,47 @@ table {
   margin-bottom: 35px;
   justify-content: space-around; }
 
-.contact-container {
-  background: rgba(40, 40, 40, 0.5);
-  min-height: 480px;
-  height: 90vh;
+.contact {
+  overflow-x: auto;
+  padding-top: 100px;
+  height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 1.3;
+  background: rgba(40, 40, 40, 0.5);
+  background: url("../../../public/images/woodgrain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box; }
+
+.contact-container {
+  line-height: 1.2;
   font-family: "Tenor Sans", sans-serif;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10vh;
+  color: white; }
 
 .contact-label {
-  font-family: "Archivo Black", serif; }
+  font-family: "Archivo Black", serif;
+  text-align: center;
+  margin-top: 36px; }
 
 .looking {
   color: #FF8C00;
-  font-family: "Archivo Black", serif; }
+  font-family: "Tenor Sans", sans-serif; }
 
-#twitter-icon, #github-icon, #linkedin-icon {
+#twitter-icon,
+#github-icon,
+#linkedin-icon {
   height: 75px;
   width: 75px;
-  margin: 20px; }
-
-#twitter-icon {
-  background: url("../../../public/images/twitter.svg"); }
-
-#github-icon {
-  background: url("../../../public/images/github-orange.svg"); }
-
-#linkedin-icon {
-  background: url("../../../public/images/linkedin.svg"); }
+  margin: 24px 10px 24px 10px; }
 
 #social-list {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 36px; }
 
 body {
   min-width: 320px;

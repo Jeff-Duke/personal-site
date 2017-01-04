@@ -1,140 +1,137 @@
 @import '_variables';
-
 #navBar {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .navigationHeader {
-  display: none;
-
-  @media screen and (min-width: 44em)
-  {
-    display: inline-block;
-    min-height: 100px;
-    min-width: 100vw;
-    background: url('../../../public/images/topo.jpg');
-    // background image from https://www.kinddesign.co/
-    background-size: cover;
-    position: fixed;
-    border-bottom: 1px solid #FFF;
-  }
+    display: none;
+    @media screen and (min-width: 44em) {
+        display: inline-block;
+        min-height: 100px;
+        min-width: 100vw;
+        background: url('../../../public/images/topo.jpg');
+        // background image from https://www.kinddesign.co/
+        background-size: cover;
+        position: fixed;
+        border-bottom: 2px solid #FFF;
+        z-index: 10;
+    }
 }
 
-.navigationLinks
-{
+.navigationLinks {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     min-width: 120px;
     min-height: 100px;
-    li
-    {
+    li {
         padding: 0 15px 0 15px;
+        margin-top: 20px;
         font-family: $font-sans;
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 2;
         color: white;
     }
     li:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
     }
     li:hover:after {
         width: 85%;
-        background: $color-hero-text;
+        background: $color-accent;
     }
     .nav-link {
-      min-height: 80px;
+        min-height: 80px;
     }
 }
 
 #mobileMenuExpanded {
-  display: none;
-  min-height: 100px;
-  min-width: 100vw;
-  background: url('../../../public/images/topo.jpg');
-  // background image from https://www.kinddesign.co/
-  background-size: cover;
-  position: fixed;
-  border-bottom: 1px solid #FFF;
-  z-index: 5;
-  @media screen and (min-width: 700px) {
-    display:none;
-  }
-  .mobileMenuLinks{   
-    li
-    {
-        padding: 5px;
-        font-family: $font-sans;
+    display: none;
+    min-height: 100px;
+    min-width: 100vw;
+    background: url('../../../public/images/topo.jpg');
+    // background image from https://www.kinddesign.co/
+    background-size: cover;
+    position: fixed;
+    border-bottom: 2px solid #FFF;
+    z-index: 10;
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+    .mobileMenuLinks {
+        li {
+            padding: 5px;
+            font-family: $font-sans;
+            font-size: 2em;
+            line-height: 1.75;
+            color: white;
+        }
+        li:after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 0px;
+            background: transparent;
+            transition: width .5s ease, background-color .5s ease;
+        }
+        li:hover:after {
+            width: 60%;
+            background: $color-accent;
+        }
+        .nav-link {
+            min-height: 40px;
+            width: 50vw;
+        }
+    }
+    #closeButton {
+        color: $color-accent;
         font-size: 2em;
-        line-height: 1.75;
-        color: white;
+        font-family: $font-sans;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        display: inline-block;
     }
-    li:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-    }
-    li:hover:after {
-        width: 25%;
-        background: $color-hero-text;
-    }
-    .nav-link {
-      min-height: 40px;
-    }
-  }
-  #closeButton {
-    color: $color-hero-text;
-    font-size: 2.5em;
-    font-family: $font-sans;
-    position: absolute;
-    right: 0;
-    margin: 25px;
-    display: inline-block;
-  }
 }
 
 .mobileMenuHeader {
-  background: url('../../../public/images/topo.jpg');
-  // background image from https://www.kinddesign.co/
-  background-size: cover;
-  position: fixed;
-  height: 100px;
-  border-bottom: 1px solid #FFF;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  @media screen and (min-width: 44em) {
-    display: none;
-  }
+    background: url('../../../public/images/topo.jpg');
+    // background image from https://www.kinddesign.co/
+    background-size: cover;
+    position: fixed;
+    height: 100px;
+    border-bottom: 1px solid #FFF;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+    @media screen and (min-width: 44em) {
+        display: none;
+    }
 }
 
 #mobileMenuIcon {
-  height: 100px;
-  width: 200px;
-  background-position: center;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  margin-top: 25px;
+    height: 100px;
+    width: 200px;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-top: 25px;
 }
 
 #menuText {
-  font-family: $font-sans;
-  color: #FFF;
-  font-size: 2.5em;
-  margin-right: 25px;
-  position: relative;
-  bottom: 15px;
+    font-family: $font-sans;
+    color: #FFF;
+    font-size: 2em;
+    margin-right: 30px;
+    position: relative;
+    bottom: 10px;
+    right: -15px;
 }
-
-
