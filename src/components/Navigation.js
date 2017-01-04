@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import hamburgerIcon from '../../public/images/hamburger-icon.svg';
+import closeMenu from '../../public/images/close-menu.svg';
 
 const Navigation = () => {
     const toggleMenuOpen = (e) => {
@@ -17,19 +18,21 @@ const Navigation = () => {
         <section id="navBar">
             <article className="navigationHeader">
                 <ul className="navigationLinks">
-                    <Link to="/"> <li className="nav-link"> Home </li> </Link>
-                    <Link to="/Projects"> <li className="nav-link"> Projects </li> </Link>
-                    <Link to="/Contact"> <li className="nav-link"> Contact  </li> </Link>
+                    <Link to="/"> <li className="nav-link"> HOME </li> </Link>
+                    <Link to="/Projects"> <li className="nav-link"> PROJECTS </li> </Link>
+                    <Link to="/Contact"> <li className="nav-link"> CONTACT  </li> </Link>
                 </ul>
             </article>
             <article id="mobileMenuExpanded" 
                 onClick={(e) => toggleMenuClosed(e)} 
                 >
-                <a href="" id="closeButton" onClick={(e) => toggleMenuClosed(e)}>X</a>
+                <a href="" id="closeButton" onClick={(e) => toggleMenuClosed(e)}><img 
+                    src={closeMenu} alt={"close menu icon"}
+                /></a>
                 <ul className="mobileMenuLinks">
-                    <Link to="/"> <li className="nav-link"> Home </li> </Link>
-                    <Link to="/Projects"> <li className="nav-link"> Projects </li> </Link>
-                    <Link to="/Contact"> <li className="nav-link"> Contact  </li> </Link>
+                    <Link to="/"> <li className="nav-link"> HOME </li> </Link>
+                    <Link to="/Projects"> <li className="nav-link"> PROJECTS </li> </Link>
+                    <Link to="/Contact"> <li className="nav-link"> CONTACT  </li> </Link>
                 </ul>
             </article>
             <article className="mobileMenuHeader">
@@ -38,7 +41,7 @@ const Navigation = () => {
                     id="mobileMenuIcon" 
                     onClick={(e) => {toggleMenuOpen(e)}}>
                 <span id="menuText">
-                Menu
+                MENU
                 </span>
                 <img 
                     src={hamburgerIcon} alt={"menu-icon"}

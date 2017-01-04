@@ -7,9 +7,8 @@
 
 .hero-text {
   padding: 36px;
-  background: rgba(40, 40, 40, 0.9);
-  font-family: "Archivo Black", serif;
-  color: #FF8C00;
+  font-family: "Tenor Sans", sans-serif;
+  color: #FFF;
   font-size: 32px;
   line-height: 1.4;
   display: flex;
@@ -26,7 +25,7 @@
 .hero {
   min-height: 100vh;
   min-width: 100vw;
-  background: url("../../../public/images/planks.jpg");
+  background: url("../../../public/images/woodgrain.jpg");
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -35,7 +34,7 @@
 
 .hero-link {
   margin-top: 25px;
-  font-family: inherit;
-  color: #FFF; }
+  font-family: "Archivo Black", serif;
+  color: #FF8C00; }
 
 /*# sourceMappingURL=Hero.css.map */

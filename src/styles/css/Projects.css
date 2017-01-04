@@ -6,26 +6,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 24px 0 60px 0;
-  height: 80vh;
-  overflow-x: scroll; }
+  padding: 120px 0 60px 0;
+  height: 100vh;
+  overflow-x: scroll;
+  background: url("../../../public/images/woodgrain.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
 
 .clearfix {
   overflow: auto;
   zoom: 1; }
 
 .content-card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: flex;
   flex-direction: column;
   width: 350px;
   height: 500px;
   margin: 10px;
-  border: solid 1px lightgrey;
   border-radius: 5px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: #FFF; }
+
+.content-card:hover {
+  transform: scale(1.025);
+  z-index: 1; }
 
 .card-photo {
   width: 300px;
@@ -44,7 +51,9 @@
     padding: 10px; }
   .card-text p {
     margin-bottom: 15px;
-    padding: 10px; }
+    padding: 10px;
+    text-decoration: none;
+    color: black; }
 
 .card-title {
   margin-top: 10px;

@@ -15,7 +15,8 @@
       background: url("../../../public/images/topo.jpg");
       background-size: cover;
       position: fixed;
-      border-bottom: 1px solid #FFF; } }
+      border-bottom: 2px solid #FFF;
+      z-index: 10; } }
 
 .navigationLinks {
   display: flex;
@@ -26,8 +27,9 @@
   min-height: 100px; }
   .navigationLinks li {
     padding: 0 15px 0 15px;
+    margin-top: 20px;
     font-family: "Tenor Sans", sans-serif;
-    font-size: 2.5em;
+    font-size: 2em;
     line-height: 2;
     color: white; }
   .navigationLinks li:after {
@@ -51,8 +53,8 @@
   background: url("../../../public/images/topo.jpg");
   background-size: cover;
   position: fixed;
-  border-bottom: 1px solid #FFF;
-  z-index: 5; }
+  border-bottom: 2px solid #FFF;
+  z-index: 10; }
   @media screen and (min-width: 700px) {
     #mobileMenuExpanded {
       display: none; } }
@@ -70,17 +72,18 @@
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
   #mobileMenuExpanded .mobileMenuLinks li:hover:after {
-    width: 25%;
+    width: 60%;
     background: #FF8C00; }
   #mobileMenuExpanded .mobileMenuLinks .nav-link {
-    min-height: 40px; }
+    min-height: 40px;
+    width: 50vw; }
   #mobileMenuExpanded #closeButton {
     color: #FF8C00;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: "Tenor Sans", sans-serif;
     position: absolute;
     right: 0;
-    margin: 25px;
+    top: 15px;
     display: inline-block; }
 
 .mobileMenuHeader {
@@ -91,7 +94,8 @@
   border-bottom: 1px solid #FFF;
   width: 100vw;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  z-index: 4; }
   @media screen and (min-width: 44em) {
     .mobileMenuHeader {
       display: none; } }
@@ -108,9 +112,10 @@
 #menuText {
   font-family: "Tenor Sans", sans-serif;
   color: #FFF;
-  font-size: 2.5em;
-  margin-right: 25px;
+  font-size: 2em;
+  margin-right: 30px;
   position: relative;
-  bottom: 15px; }
+  bottom: 10px;
+  right: -15px; }
 
 /*# sourceMappingURL=Navigation.css.map */
