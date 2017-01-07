@@ -71,7 +71,8 @@ table {
   border-spacing: 0; }
 
 #hero {
-  min-height: 300px; }
+  min-height: 300px;
+  overflow-x: auto; }
 
 .hero-text {
   padding: 36px;
@@ -82,8 +83,8 @@ table {
   line-height: 1.4;
   text-align: center;
   border-radius: 3px;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 50px; }
 
 .hero {
   min-height: 100vh;

@@ -1,6 +1,7 @@
 @import '_variables';
 #hero {
     min-height: 300px;
+    overflow-x: auto;
 }
 
 .hero-text {
@@ -12,8 +13,8 @@
     line-height: 1.4;
     text-align: center;
     border-radius: 3px;
-    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 50px;
 }
 
 .hero {
