@@ -1,7 +1,13 @@
 {
-  "main.css": "static/css/main.a432c387.css",
-  "main.css.map": "static/css/main.a432c387.css.map",
-  "main.js": "static/js/main.d976a2e4.js",
-  "main.js.map": "static/js/main.d976a2e4.js.map",
-  "static/media/aspen.jpg": "static/media/aspen.4c414dd8.jpg"
+  "main.css": "static/css/main.97a5b69b.css",
+  "main.css.map": "static/css/main.97a5b69b.css.map",
+  "main.js": "static/js/main.3d8600b8.js",
+  "main.js.map": "static/js/main.3d8600b8.js.map",
+  "static/media/close-menu.svg": "static/media/close-menu.41720473.svg",
+  "static/media/github-orange.svg": "static/media/github-orange.460aa8b6.svg",
+  "static/media/hamburger-icon.svg": "static/media/hamburger-icon.98866a30.svg",
+  "static/media/linkedin.svg": "static/media/linkedin.ae198b60.svg",
+  "static/media/topo.jpg": "static/media/topo.7ff87f66.jpg",
+  "static/media/twitter.svg": "static/media/twitter.7fa142c2.svg",
+  "static/media/woodgrain.jpg": "static/media/woodgrain.f39a058d.jpg"
 }

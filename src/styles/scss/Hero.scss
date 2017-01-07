@@ -1,6 +1,7 @@
 @import '_variables';
 #hero {
     min-height: 300px;
+    overflow-x: auto;
 }
 
 .hero-text {
@@ -8,7 +9,7 @@
     font-family: $font-sans;
     color: #FFF;
     font-size: 36px;
-    margin-top: 100px;
+    margin-top: 150px;
     line-height: 1.4;
     display: flex;
     text-align: center;
@@ -18,8 +19,8 @@
     height: 480px;
     width: 75vw;
     border-radius: 3px;
-    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    margin-bottom: 50px;
 }
 
 .hero {
