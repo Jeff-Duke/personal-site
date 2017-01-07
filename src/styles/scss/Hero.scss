@@ -7,16 +7,10 @@
     padding: 36px;
     font-family: $font-sans;
     color: #FFF;
-    font-size: 36px;
+    font-size: 34px;
     margin-top: 100px;
     line-height: 1.4;
-    display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 480px;
-    width: 75vw;
     border-radius: 3px;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
@@ -33,8 +27,6 @@
     align-items: center;
 }
 
-.hero-link {
-    margin-top: 25px;
-    font-family: $font-serif;
+.nameEmphasis {
     color: $color-accent;
 }

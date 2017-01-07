@@ -27,10 +27,10 @@
   min-height: 100px; }
   .navigationLinks li {
     padding: 0 15px 0 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: "Tenor Sans", sans-serif;
     font-size: 2em;
-    line-height: 2;
+    line-height: 1.5;
     color: white; }
   .navigationLinks li:after {
     content: '';
@@ -62,7 +62,7 @@
     padding: 5px;
     font-family: "Tenor Sans", sans-serif;
     font-size: 2em;
-    line-height: 1.75;
+    line-height: 1.5;
     color: white; }
   #mobileMenuExpanded .mobileMenuLinks li:after {
     content: '';
@@ -72,7 +72,7 @@
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
   #mobileMenuExpanded .mobileMenuLinks li:hover:after {
-    width: 60%;
+    width: 80%;
     background: #FF8C00; }
   #mobileMenuExpanded .mobileMenuLinks .nav-link {
     min-height: 40px;

@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 320px;
+  min-width: 275px;
   max-width: 480px;
-  margin: 0 auto 0 auto;
-  font-size: 28px;
+  margin: 25px auto 0 auto;
+  font-size: 24px;
   label {
     margin-bottom: 15px;
   }
@@ -17,7 +17,7 @@
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);    
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 24px;
     padding: 5px;
     background: #DDD;
   }
@@ -40,4 +40,13 @@
   margin: 24px auto 0 auto;
   border: 1px solid #DDD;
   border-radius: 3px;
+}
+
+.emailButton:active {
+  background: $color-accent;
+  color: $color-background-dark;
+}
+
+.emailButton:focus{
+  outline: 0;
 }
