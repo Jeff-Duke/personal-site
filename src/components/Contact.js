@@ -14,6 +14,7 @@ const Contact = () => {
           for work.</p>
         <div className="contact-info">
           <p className="contact-label">You can contact me here:</p>
+          <ContactForm email="jeff@jeffduke.me"/>
           <div>
             <ul id="social-list">
               <a href="https://github.com/Jeff-Duke">
@@ -34,7 +35,6 @@ const Contact = () => {
                 </li>
               </a>
             </ul>
-            <ContactForm email="jeff.duke@gmail.com"/>
           </div>
         </div>
       </section>

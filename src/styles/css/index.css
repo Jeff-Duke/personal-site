@@ -78,16 +78,10 @@ table {
   padding: 36px;
   font-family: "Tenor Sans", sans-serif;
   color: #FFF;
-  font-size: 36px;
-  margin-top: 150px;
+  font-size: 34px;
+  margin-top: 100px;
   line-height: 1.4;
-  display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 480px;
-  width: 75vw;
   border-radius: 3px;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 50px; }
@@ -102,9 +96,7 @@ table {
   justify-content: center;
   align-items: center; }
 
-.hero-link {
-  margin-top: 25px;
-  font-family: "Archivo Black", serif;
+.nameEmphasis {
   color: #FF8C00; }
 
 #navBar {
@@ -132,10 +124,10 @@ table {
   min-height: 100px; }
   .navigationLinks li {
     padding: 0 15px 0 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: "Tenor Sans", sans-serif;
     font-size: 2em;
-    line-height: 2;
+    line-height: 1.5;
     color: white; }
   .navigationLinks li:after {
     content: '';
@@ -167,7 +159,7 @@ table {
     padding: 5px;
     font-family: "Tenor Sans", sans-serif;
     font-size: 2em;
-    line-height: 1.75;
+    line-height: 1.5;
     color: white; }
   #mobileMenuExpanded .mobileMenuLinks li:after {
     content: '';
@@ -177,7 +169,7 @@ table {
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
   #mobileMenuExpanded .mobileMenuLinks li:hover:after {
-    width: 60%;
+    width: 80%;
     background: #FF8C00; }
   #mobileMenuExpanded .mobileMenuLinks .nav-link {
     min-height: 40px;
@@ -249,9 +241,11 @@ table {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  background: #FFF; }
+  background: #FFF;
+  transition: 0.5s; }
 
 .content-card:hover {
+  transition: 0.5s;
   transform: scale(1.025);
   z-index: 1; }
 
@@ -303,7 +297,7 @@ table {
 .contact-container {
   line-height: 1.2;
   font-family: "Tenor Sans", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.2em;
   padding: 20px;
   text-align: center;
   margin-top: 8px;
@@ -312,7 +306,8 @@ table {
 .contact-label {
   font-family: "Archivo Black", serif;
   text-align: center;
-  margin-top: 36px; }
+  margin-top: 36px;
+  color: white; }
 
 .looking {
   color: #FF8C00;
@@ -321,24 +316,24 @@ table {
 #twitter-icon,
 #github-icon,
 #linkedin-icon {
-  height: 75px;
-  width: 75px;
-  margin: 24px 10px 24px 10px; }
+  height: 65px;
+  width: 65px;
+  margin: 24px; }
 
 #social-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 8px; }
+  margin-top: 10px; }
 
 .contactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 320px;
+  min-width: 275px;
   max-width: 480px;
-  margin: 0 auto 0 auto;
-  font-size: 28px; }
+  margin: 25px auto 0 auto;
+  font-size: 24px; }
   .contactForm label {
     margin-bottom: 15px; }
   .contactForm input {
@@ -347,7 +342,7 @@ table {
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 24px;
     padding: 5px;
     background: #DDD; }
   .contactForm textarea {
@@ -367,6 +362,13 @@ table {
   margin: 24px auto 0 auto;
   border: 1px solid #DDD;
   border-radius: 3px; }
+
+.emailButton:active {
+  background: #FF8C00;
+  color: #282828; }
+
+.emailButton:focus {
+  outline: 0; }
 
 body {
   min-width: 320px;

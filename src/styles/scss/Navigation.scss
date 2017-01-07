@@ -27,10 +27,10 @@
     min-height: 100px;
     li {
         padding: 0 15px 0 15px;
-        margin-top: 20px;
+        margin-top: 30px;
         font-family: $font-sans;
         font-size: 2em;
-        line-height: 2;
+        line-height: 1.5;
         color: white;
     }
     li:after {
@@ -69,7 +69,7 @@
             padding: 5px;
             font-family: $font-sans;
             font-size: 2em;
-            line-height: 1.75;
+            line-height: 1.5;
             color: white;
         }
         li:after {
@@ -81,7 +81,7 @@
             transition: width .5s ease, background-color .5s ease;
         }
         li:hover:after {
-            width: 60%;
+            width: 80%;
             background: $color-accent;
         }
         .nav-link {

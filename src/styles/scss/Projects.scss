@@ -29,8 +29,10 @@
     justify-content: center;
     box-sizing: border-box;
     background: #FFF;
+    transition:0.5s;
 }
 .content-card:hover {
+    transition: 0.5s;
     transform: scale(1.025);
     z-index: 1;
 }
