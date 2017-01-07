@@ -28,6 +28,9 @@
     font-size: 18px;
     padding: 10px;
     background: #DDD; }
+  .contactForm input:focus, .contactForm textarea:focus {
+    outline: 3;
+    outline-color: #FF8C00; }
 
 .emailButton {
   height: 40px;
@@ -44,6 +47,7 @@
   color: #282828; }
 
 .emailButton:focus {
-  outline: 0; }
+  outline: 2;
+  outline-color: white; }
 
 /*# sourceMappingURL=ContactForm.css.map */

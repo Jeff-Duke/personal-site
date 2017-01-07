@@ -29,6 +29,10 @@
     padding: 10px;
     background: #DDD;
   }
+  input:focus, textarea:focus {
+    outline: 3;
+    outline-color: $color-accent;
+  }
 }
 
 .emailButton {
@@ -48,5 +52,6 @@
 }
 
 .emailButton:focus{
-  outline: 0;
+  outline: 2;
+  outline-color: white;
 }
