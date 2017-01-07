@@ -8,7 +8,6 @@ const Contact = () => {
   return (
     <div className="contact">
       <section className="contact-container">
-        <div className="headshot"></div>
         <p>Thanks for stopping by!</p>
         <p>I am currently
           <span className="looking"> looking </span>
