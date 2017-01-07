@@ -11,7 +11,7 @@ const Contact = () => {
         <p>Thanks for stopping by!</p>
         <p>I am currently
           <span className="looking"> looking </span>
-          for work</p>
+          for work.</p>
         <div className="contact-info">
           <p className="contact-label">You can contact me here:</p>
           <div>
