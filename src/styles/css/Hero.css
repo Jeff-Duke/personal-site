@@ -7,7 +7,7 @@
   overflow-x: auto; }
 
 .hero-text {
-  padding: 36px;
+  width: 75vw;
   font-family: "Tenor Sans", sans-serif;
   color: #FFF;
   font-size: 34px;
@@ -29,6 +29,7 @@
   align-items: center; }
 
 .nameEmphasis {
-  color: #FF8C00; }
+  color: #FF8C00;
+  font-weight: bolder; }
 
 /*# sourceMappingURL=Hero.css.map */

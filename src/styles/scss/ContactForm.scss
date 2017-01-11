@@ -10,6 +10,7 @@
   font-size: 24px;
   label {
     margin-bottom: 15px;
+    text-align: left;
   }
   input {
     height: 36px;
@@ -17,8 +18,8 @@
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);    
     margin-bottom: 20px;
-    font-size: 24px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 10px;
     background: #DDD;
   }
   textarea {
@@ -44,14 +45,19 @@
   margin: 24px auto 0 auto;
   border: 1px solid #DDD;
   border-radius: 3px;
-}
-
-.emailButton:active {
-  background: $color-accent;
-  color: $color-background-dark;
-}
-
-.emailButton:focus{
-  outline: 2;
-  outline-color: white;
+  transition: all 0.3s;
+  &:hover {
+    background: lighten($color-background-dark, 10%);
+    color: darken($color-accent, 10%);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &:active {
+    background: $color-accent;
+    color: $color-background-dark;
+  }
+  &:focus {
+    outline: 2;
+    outline-color: white;
+  }
 }

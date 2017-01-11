@@ -11,15 +11,16 @@
   margin: 25px auto 0 auto;
   font-size: 24px; }
   .contactForm label {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    text-align: left; }
   .contactForm input {
     height: 36px;
     border: none;
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     margin-bottom: 20px;
-    font-size: 24px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 10px;
     background: #DDD; }
   .contactForm textarea {
     border: none;
@@ -40,14 +41,18 @@
   font-size: 24px;
   margin: 24px auto 0 auto;
   border: 1px solid #DDD;
-  border-radius: 3px; }
-
-.emailButton:active {
-  background: #FF8C00;
-  color: #282828; }
-
-.emailButton:focus {
-  outline: 2;
-  outline-color: white; }
+  border-radius: 3px;
+  transition: all 0.3s; }
+  .emailButton:hover {
+    background: #424242;
+    color: #cc7000;
+    cursor: pointer;
+    transition: all 0.3s; }
+  .emailButton:active {
+    background: #FF8C00;
+    color: #282828; }
+  .emailButton:focus {
+    outline: 2;
+    outline-color: white; }
 
 /*# sourceMappingURL=ContactForm.css.map */

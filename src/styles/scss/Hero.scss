@@ -5,7 +5,7 @@
 }
 
 .hero-text {
-    padding: 36px;
+    width: 75vw;
     font-family: $font-sans;
     color: #FFF;
     font-size: 34px;
@@ -30,4 +30,5 @@
 
 .nameEmphasis {
     color: $color-accent;
+    font-weight: bolder;
 }
