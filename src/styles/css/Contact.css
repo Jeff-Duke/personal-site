@@ -4,11 +4,11 @@
 @import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
 .contact {
   overflow-x: auto;
-  padding-top: 100px;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 125px;
   height: 100vh;
   width: 100vw;
-  background: rgba(40, 40, 40, 0.5);
-  background: url("../../../public/images/woodgrain.jpg");
+  background: url("../../../public/images/woodgrain.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   box-sizing: border-box; }

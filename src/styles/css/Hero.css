@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black");
 @import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
 #hero {
-  min-height: 300px;
-  overflow-x: auto; }
+  min-height: 300px; }
 
 .hero-text {
   width: 75vw;

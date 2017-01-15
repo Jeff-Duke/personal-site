@@ -1,11 +1,11 @@
 @import '_variables';
 .contact {
     overflow-x: auto;
-    padding-top: 100px;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 125px;
     height: 100vh;
     width: 100vw;
-    background: rgba(40, 40, 40, .5);
-    background: url('../../../public/images/woodgrain.jpg');
+    background: url('../../../public/images/woodgrain.jpg') no-repeat;
     //image credit: https://unsplash.com/photos/s2YlQXGk640
     background-size: cover;
     background-attachment: fixed;
