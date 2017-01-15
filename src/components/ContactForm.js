@@ -6,9 +6,9 @@ const ContactForm = (email) => {
   return (
   <div className="emailContact">
     <form className="contactForm" method="POST" action={`http://formspree.io/${email}`}>
-      <label htmlFor="email">Your Email</label>
+      <label htmlFor="email">email</label>
       <input aria-label="your email" type="email" name="email" placeholder="Your email" />
-      <label htmlFor="message">Your message</label>
+      <label htmlFor="message">message</label>
       <textarea aria-label="your message" rows="10" name="message" placeholder="Your message"></textarea>
       <button className="emailButton"  type="submit" children="Send"></button>
     </form>  
