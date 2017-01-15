@@ -8,3 +8,4 @@ src/styles/.sass-cache
 src/styles/.sass-cache/*
 
 .DS_Store
+.sass-cache/
