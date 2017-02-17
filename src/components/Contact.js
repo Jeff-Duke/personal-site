@@ -9,8 +9,8 @@ const Contact = () => {
     <div className="contact">
       <section className="contact-container">
         <p>Thanks for stopping by! I am currently
-          <span className="looking"> looking </span>
-          for work.  Please reach out, I'd love to chat!</p>
+          <span className="looking"> not looking </span>
+          for work. Please reach out if you'd like to chat!</p>
         <div className="contact-info">
           <p className="contact-label">You can contact me here:</p>
           <ContactForm email="jeff.duke@gmail.com"/>
