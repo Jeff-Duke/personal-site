@@ -7,10 +7,6 @@ test/specs/selenium.jar
 src/styles/.sass-cache
 src/styles/.sass-cache/*
 
-.DS_Store
-*/.DS_Store
-*/*/.DS_Store
+*.DS_Store
 .sass-cache/
-./build
-build
-*.build
+build/
