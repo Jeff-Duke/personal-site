@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
 import hamburgerIcon from '../../public/images/hamburger-icon.svg';
 import closeMenu from '../../public/images/close-menu.svg';
 
@@ -18,9 +18,9 @@ const Navigation = () => {
         <section id="navBar">
             <article className="navigationHeader">
                 <ul className="navigationLinks">
-                    <Link to="/"> <li className="nav-link"> HOME </li> </Link>
-                    <Link to="/Projects"> <li className="nav-link"> PROJECTS </li> </Link>
-                    <Link to="/Contact"> <li className="nav-link"> CONTACT  </li> </Link>
+                    <NavLink to="/"> <li className="nav-link"> HOME </li> </NavLink>
+                    <NavLink to="/Projects"> <li className="nav-link"> PROJECTS </li> </NavLink>
+                    <NavLink to="/Contact"> <li className="nav-link"> CONTACT  </li> </NavLink>
                 </ul>
             </article>
             <article id="mobileMenuExpanded" 
@@ -30,9 +30,9 @@ const Navigation = () => {
                     src={closeMenu} alt={"close menu icon"}
                 /></a>
                 <ul className="mobileMenuLinks">
-                    <Link to="/"> <li className="nav-link"> HOME </li> </Link>
-                    <Link to="/Projects"> <li className="nav-link"> PROJECTS </li> </Link>
-                    <Link to="/Contact"> <li className="nav-link"> CONTACT  </li> </Link>
+                    <NavLink to="/"> <li className="nav-link"> HOME </li> </NavLink>
+                    <NavLink to="/Projects"> <li className="nav-link"> PROJECTS </li> </NavLink>
+                    <NavLink to="/Contact"> <li className="nav-link"> CONTACT  </li> </NavLink>
                 </ul>
             </article>
             <article className="mobileMenuHeader">

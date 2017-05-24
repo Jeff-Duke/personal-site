@@ -57,7 +57,7 @@ const Projects = () => {
       </article>
 
       <article className="content-card clearfix">
-        <a href="https://casey1449.github.io/Game-Time/">
+        <a href="https://casey1449.github.io/Blanched-Almonoid/">
         <div className="card-photo" id="game-time-photo">
           <img src="./images/game-time-thumb.png" alt="Thumbnail for breakout game card" />
         </div>
@@ -69,7 +69,7 @@ const Projects = () => {
         </div>
         </a>
         <div className="card-links">
-          <a href="https://github.com/Casey1449/Game-Time">View the code on GitHub</a>
+          <a href="https://github.com/Casey1449/Blanched-Almonoid">View the code on GitHub</a>
         </div>
       </article>
 

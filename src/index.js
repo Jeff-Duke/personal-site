@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Match } from 'react-router';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './styles/css/index.css';
 import App from './components/App';
 import Navigation from './components/Navigation';
@@ -9,14 +9,17 @@ import Contact from './components/Contact';
 
 const Root = () => {
   return (
-    <BrowserRouter>
-      <div>
+    <Router>
+      <section>
         <Navigation />
-        <Match exactly pattern="/" component={ App } />
-        <Match exactly pattern="/projects" component={ Projects } />
-        <Match exactly pattern="/contact" component={ Contact } />
-      </div>
-    </BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={ App } />
+          <Route exact path="/projects" component={ Projects } />
+          <Route exact path="/contact" component={ Contact } />
+          <Route render={() => <p className="routingError">Not Found!</p>} />
+        </Switch>
+      </section>
+    </Router>
   )
 }
 
