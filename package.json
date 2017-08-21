@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
+    "node-sass": "^4.5.3",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router": "^4.0.0-alpha.3"
+    "react-ga": "^2.2.0",
+    "react-router-dom": "^4.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,7 +20,7 @@
     "deploy": "npm run build && mv build/index.html build/200.html && surge build jeffduke.me",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass" : "sass --watch src/styles/scss:src/styles/css"
+    "sass": "sass --watch src/styles/scss:src/styles/css"
   },
   "homepage": "http://jeffduke.me"
 }

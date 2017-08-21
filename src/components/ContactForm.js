@@ -11,9 +11,9 @@ const ContactForm = (email) => {
       <label htmlFor="message">message</label>
       <textarea aria-label="your message" rows="10" name="message" placeholder="Your message"></textarea>
       <button className="emailButton"  type="submit" children="Send"></button>
-    </form>  
+    </form>
   </div>
-  ) 
+  )
 }
 
 export default ContactForm;

@@ -26,7 +26,7 @@
     font-family: $font-serif;
     text-align: center;
     margin-top: 36px;
-    color: white;
+    color: $color-accent;
 }
 
 .looking {
@@ -34,9 +34,7 @@
     font-family: $font-sans;
 }
 
-#twitter-icon,
-#github-icon,
-#linkedin-icon {
+.social-icon {
     height: 65px;
     width: 65px;
     margin: 24px;

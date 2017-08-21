@@ -30,8 +30,9 @@
     padding: 10px;
     background: #DDD; }
   .contactForm input:focus, .contactForm textarea:focus {
-    outline: 3;
-    outline-color: #FF8C00; }
+    outline: none;
+    border-color: #FF8C00;
+    box-shadow: 0 0 24px #FF8C00; }
 
 .emailButton {
   height: 40px;

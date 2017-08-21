@@ -5,6 +5,23 @@ const Projects = () => {
     <section id="projects">
 
       <article className="content-card clearfix">
+        <a href="https://turing-fridays.firebaseapp.com/">
+        <div className="card-photo">
+          <img src="./images/turing-fridays.png" alt="Thumbnail for turing fridays app" />
+        </div>
+        <div className="card-text">
+          <h3>Turing-Fridays</h3>
+          <p>
+              An event management app for the Turing School.
+          </p>
+        </div>
+        </a>
+        <div className="card-links">
+          <a href="https://github.com/jeff-duke/turing-fridays">View the code on GitHub</a>
+        </div>
+      </article>
+
+      <article className="content-card clearfix">
         <a href="https://github.com/Jeff-Duke/radicchio">
         <div className="card-photo" id="radicchio-photo">
           <img src="./images/radicchio-thumb.png" alt="Thumbnail for radicchio project" />
@@ -37,24 +54,6 @@ const Projects = () => {
             <a className="projectLink" href="https://github.com/Jeff-Duke/shoot-the-breeze">View the code on GitHub</a>
         </div>
       </article>
-      
-
-      <article className="content-card clearfix">
-        <a href="https://tier-2.firebaseapp.com/">
-        <div className="card-photo">
-          <img src="./images/connectr-thumb.png" alt="Thumbnail for Connectr contact management app" />
-        </div>
-        <div className="card-text">
-          <h3>Connectr</h3>
-          <p>
-              A contact management app, built in React, utilizing Firebase.
-          </p>
-        </div>
-        </a>
-        <div className="card-links">
-          <a href="https://github.com/kylem038/tier-2">View the code on GitHub</a>
-        </div>
-      </article>
 
       <article className="content-card clearfix">
         <a href="https://casey1449.github.io/Blanched-Almonoid/">
@@ -70,6 +69,23 @@ const Projects = () => {
         </a>
         <div className="card-links">
           <a href="https://github.com/Casey1449/Blanched-Almonoid">View the code on GitHub</a>
+        </div>
+      </article>
+
+      <article className="content-card clearfix">
+        <a href="https://github.com/tessel/t2-docs">
+        <div className="card-photo" id="tessel-photo">
+          <img src="./images/tessel2.png" alt="Thumbnail for Tessel project" />
+        </div>
+        <div className="card-text">
+          <h3>Tessel</h3>
+          <p>
+            Open source project I contributed to by adding some documentation.
+          </p>
+        </div>
+        </a>
+        <div className="card-links">
+          <a href="https://github.com/tessel/t2-docs">View this project on GitHub</a>
         </div>
       </article>
 

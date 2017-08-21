@@ -1,11 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { initialize, set, pageview } from 'react-ga';
+
 import './styles/css/index.css';
 import App from './components/App';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+
+initialize('UA-99794039-1');
+
+const logPageView = () => {
+  set({ page: window.location.pathname + window.location.search });
+  pageview(window.location.pathname + window.location.search);
+};
 
 const Root = () => {
   return (
@@ -23,5 +32,4 @@ const Root = () => {
   )
 }
 
-render(<Root />, document.querySelector("#root"));
-
+render(<Root onUpdate={logPageView}/>, document.querySelector("#root"));

@@ -26,15 +26,13 @@
   font-family: "Archivo Black", serif;
   text-align: center;
   margin-top: 36px;
-  color: white; }
+  color: #FF8C00; }
 
 .looking {
   color: #FF8C00;
   font-family: "Tenor Sans", sans-serif; }
 
-#twitter-icon,
-#github-icon,
-#linkedin-icon {
+.social-icon {
   height: 65px;
   width: 65px;
   margin: 24px; }
