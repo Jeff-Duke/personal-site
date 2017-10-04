@@ -43,6 +43,7 @@
 #social-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
 }

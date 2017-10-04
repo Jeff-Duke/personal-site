@@ -18,7 +18,7 @@ const logPageView = () => {
 
 const Root = () => {
   return (
-    <Router>
+    <Router onUpdate={logPageView} >
       <section>
         <Navigation />
         <Switch>

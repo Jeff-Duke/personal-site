@@ -33,6 +33,9 @@
   height: 300px;
   margin-top: 15px; }
 
+.card-photo img {
+  max-width: 100%; }
+
 .card-text {
   font-family: "Tenor Sans", sans-serif;
   width: 300px;

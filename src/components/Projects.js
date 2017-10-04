@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="card-text">
           <h3>Turing-Fridays</h3>
           <p>
-              An event management app for the Turing School.
+              An event management app for the Turing School
           </p>
         </div>
         </a>
@@ -29,7 +29,7 @@ const Projects = () => {
         <div className="card-text">
           <h3>Radicchio</h3>
           <p>
-            An automated garden watering system. Included an iot build, backend and front-ends built with various technologies.
+            An automated garden watering system. Included an iot build, backend and front-ends built with various technologies
           </p>
         </div>
         </a>
@@ -46,7 +46,7 @@ const Projects = () => {
           <div className="card-text">
             <h3 className="card-title">Shoot the Breeze</h3>
             <p>
-                A chat app, built in React, utilizing Firebase.
+                A chat app, built in React, utilizing Firebase
             </p>
           </div>
         </a>
@@ -63,7 +63,7 @@ const Projects = () => {
         <div className="card-text">
           <h3>Gametime</h3>
           <p>
-            A browser-based, breakout-style game, made with Javascript and HTML canvas.
+            A browser-based, breakout-style game, made with Javascript and HTML canvas
           </p>
         </div>
         </a>
@@ -80,7 +80,7 @@ const Projects = () => {
         <div className="card-text">
           <h3>Tessel</h3>
           <p>
-            Open source project I contributed to by adding some documentation.
+            Open source project I contributed to by adding some documentation
           </p>
         </div>
         </a>
@@ -88,6 +88,23 @@ const Projects = () => {
           <a href="https://github.com/tessel/t2-docs">View this project on GitHub</a>
         </div>
       </article>
+
+      <article className="content-card clearfix">
+      <a href="https://www.npmjs.com/package/electron-audio-conversion">
+      <div className="card-photo">
+        <img src="./images/npm-logo.png" alt="Thumbnail for turing fridays app" />
+      </div>
+      <div className="card-text">
+        <h3>Electron Audio Conversion</h3>
+        <p>
+            An NPM package for converting audio files to dataUri for Electron
+        </p>
+      </div>
+      </a>
+      <div className="card-links">
+        <a href="https://github.com/Jeff-Duke/electron-audio-conversion">View the code on GitHub</a>
+      </div>
+    </article>
 
     </section>
   )

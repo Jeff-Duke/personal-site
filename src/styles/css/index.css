@@ -264,6 +264,9 @@ table {
   height: 300px;
   margin-top: 15px; }
 
+.card-photo img {
+  max-width: 100%; }
+
 .card-text {
   font-family: "Tenor Sans", sans-serif;
   width: 300px;
@@ -331,6 +334,7 @@ table {
 #social-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px; }
 
