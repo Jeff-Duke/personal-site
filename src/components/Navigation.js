@@ -18,14 +18,14 @@ const Navigation = () => {
 		<section id="navBar">
 			<article className="navigationHeader">
 				<ul className="navigationLinks">
-					<NavLink to="/">
-						{' '}<li className="nav-link"> HOME </li>{' '}
+					<NavLink activeClassName="activeRoute" exact to="/">
+						<li className="nav-link"> HOME </li>
 					</NavLink>
-					<NavLink to="/Projects">
-						{' '}<li className="nav-link"> PROJECTS </li>{' '}
+					<NavLink activeClassName="activeRoute" to="/Projects">
+						<li className="nav-link"> PROJECTS </li>
 					</NavLink>
-					<NavLink to="/Contact">
-						{' '}<li className="nav-link"> CONTACT </li>{' '}
+					<NavLink activeClassName="activeRoute" to="/Contact">
+						<li className="nav-link"> CONTACT </li>
 					</NavLink>
 				</ul>
 			</article>
@@ -34,14 +34,14 @@ const Navigation = () => {
 					<img src={closeMenu} alt={'close menu icon'} />
 				</a>
 				<ul className="mobileMenuLinks">
-					<NavLink to="/">
-						{' '}<li className="nav-link"> HOME </li>{' '}
+					<NavLink activeClassName="activeRoute" exact to="/">
+						<li className="nav-link"> HOME </li>
 					</NavLink>
-					<NavLink to="/Projects">
-						{' '}<li className="nav-link"> PROJECTS </li>{' '}
+					<NavLink activeClassName="activeRoute" to="/Projects">
+						<li className="nav-link"> PROJECTS </li>
 					</NavLink>
-					<NavLink to="/Contact">
-						{' '}<li className="nav-link"> CONTACT </li>{' '}
+					<NavLink activeClassName="activeRoute" to="/Contact">
+						<li className="nav-link"> CONTACT </li>
 					</NavLink>
 				</ul>
 			</article>

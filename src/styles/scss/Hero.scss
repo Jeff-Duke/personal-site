@@ -4,16 +4,18 @@
 }
 
 .hero-text {
-    width: 75vw;
-    font-family: $font-sans;
-    color: #FFF;
-    font-size: 34px;
-    margin-top: 125px;
-    line-height: 1.4;
-    text-align: center;
+    background-color: rgba(0, 0, 0, .4);
     border-radius: 3px;
-    -webkit-overflow-scrolling: touch;
+    color: #FFF;
+    font-family: $font-sans;
+    font-size: 34px;
+    line-height: 1.4;
     margin-bottom: 50px;
+    margin-top: 125px;
+    padding: 2rem;
+    text-align: center;
+    width: 75vw;
+    -webkit-overflow-scrolling: touch;
 }
 
 .hero {

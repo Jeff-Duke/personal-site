@@ -2,30 +2,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -92,16 +74,18 @@ table {
   min-height: 300px; }
 
 .hero-text {
-  width: 75vw;
-  font-family: "Tenor Sans", sans-serif;
-  color: #FFF;
-  font-size: 34px;
-  margin-top: 125px;
-  line-height: 1.4;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-  -webkit-overflow-scrolling: touch;
-  margin-bottom: 50px; }
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  margin-top: 125px;
+  padding: 2rem;
+  text-align: center;
+  width: 75vw;
+  -webkit-overflow-scrolling: touch; }
 
 .hero {
   min-height: 100vh;
@@ -143,7 +127,7 @@ table {
   .navigationLinks li {
     padding: 0 15px 0 15px;
     margin-top: 30px;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 2em;
     line-height: 1.5;
     color: white; }
@@ -155,7 +139,7 @@ table {
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  .navigationLinks li:hover:after {
+  .navigationLinks .activeRoute .nav-link:after {
     width: 85%;
     background: #FF8C00; }
   .navigationLinks .nav-link {
@@ -175,7 +159,7 @@ table {
       display: none; } }
   #mobileMenuExpanded .mobileMenuLinks li {
     padding: 5px;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 2em;
     line-height: 1.5;
     color: white; }
@@ -186,7 +170,7 @@ table {
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  #mobileMenuExpanded .mobileMenuLinks li:hover:after {
+  #mobileMenuExpanded .mobileMenuLinks .activeRoute .nav-link:after {
     width: 80%;
     background: #FF8C00; }
   #mobileMenuExpanded .mobileMenuLinks .nav-link {
@@ -195,7 +179,7 @@ table {
   #mobileMenuExpanded #closeButton {
     color: #FF8C00;
     font-size: 2em;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     position: absolute;
     right: 0;
     top: 15px;
@@ -225,7 +209,7 @@ table {
   margin-top: 25px; }
 
 #menuText {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFF;
   font-size: 2em;
   margin-right: 30px;
@@ -244,44 +228,39 @@ table {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 500px;
-  margin: 10px;
-  border-radius: 5px;
+  width: 320px;
+  height: 600px;
+  margin: .75rem;
+  border-radius: 3px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   box-sizing: border-box;
   background: #FFF;
-  transition: 0.5s; }
-
-.content-card:hover {
   transition: 0.5s;
-  transform: scale(1.025);
-  z-index: 1; }
+  padding: 1.5rem; }
 
-.card-photo {
+@media screen and (max-width: 480px) {
+  .content-card {
+    margin: .5rem 0; } }
+.card-photo img {
   width: 300px;
   height: 300px;
-  margin-top: 15px; }
-
-.card-photo img {
-  max-width: 100%; }
+  padding: .5rem; }
 
 .card-text {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 300px;
   height: 125px;
-  background-color: white; }
-  .card-text h3 {
-    font-family: "Tenor Sans", sans-serif;
-    font-weight: bold;
+  background-color: white;
+  margin-top: 1rem;
+  padding: 0 .5rem; }
+  .card-text h3, .card-text p {
+    font-family: "Open Sans", sans-serif;
     color: black;
-    padding: 10px; }
-  .card-text p {
-    margin-bottom: 15px;
-    padding: 10px;
-    text-decoration: none;
-    color: black; }
+    margin: 1rem 0; }
+  .card-text h3 {
+    font-size: 1.25rem;
+    font-weight: bold; }
 
 .card-title {
   margin-top: 10px;
@@ -289,12 +268,18 @@ table {
   font-weight: bold; }
 
 .card-links {
-  font-family: "Tenor Sans", sans-serif;
-  font-weight: bold;
   display: flex;
-  width: 100%;
-  margin-bottom: 35px;
-  justify-content: space-around; }
+  align-items: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  width: 100%; }
+  .card-links a {
+    margin: .75rem 0;
+    color: #0971B2; }
+  .card-links :visited {
+    color: #0971B2; }
 
 .contact {
   overflow-x: auto;
@@ -309,7 +294,7 @@ table {
 
 .contact-container {
   line-height: 1.2;
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2.2em;
   padding: 20px;
   text-align: center;
@@ -317,14 +302,14 @@ table {
   color: white; }
 
 .contact-label {
-  font-family: "Archivo Black", serif;
+  font-family: "Raleway", serif;
   text-align: center;
   margin-top: 36px;
   color: #FF8C00; }
 
 .looking {
   color: #FF8C00;
-  font-family: "Tenor Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .social-icon {
   height: 65px;
@@ -394,6 +379,7 @@ table {
 
 body {
   min-width: 320px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 16px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
 .contact {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -15,7 +12,7 @@
 
 .contact-container {
   line-height: 1.2;
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2.2em;
   padding: 20px;
   text-align: center;
@@ -23,14 +20,14 @@
   color: white; }
 
 .contact-label {
-  font-family: "Archivo Black", serif;
+  font-family: "Raleway", serif;
   text-align: center;
   margin-top: 36px;
   color: #FF8C00; }
 
 .looking {
   color: #FF8C00;
-  font-family: "Tenor Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .social-icon {
   height: 65px;

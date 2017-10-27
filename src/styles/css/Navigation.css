@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
-@import url("https://fonts.googleapis.com/css?family=Tenor+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
 #navBar {
   box-sizing: border-box; }
 
@@ -28,7 +25,7 @@
   .navigationLinks li {
     padding: 0 15px 0 15px;
     margin-top: 30px;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 2em;
     line-height: 1.5;
     color: white; }
@@ -40,7 +37,7 @@
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  .navigationLinks li:hover:after {
+  .navigationLinks .activeRoute .nav-link:after {
     width: 85%;
     background: #FF8C00; }
   .navigationLinks .nav-link {
@@ -60,7 +57,7 @@
       display: none; } }
   #mobileMenuExpanded .mobileMenuLinks li {
     padding: 5px;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 2em;
     line-height: 1.5;
     color: white; }
@@ -71,7 +68,7 @@
     width: 0px;
     background: transparent;
     transition: width .5s ease, background-color .5s ease; }
-  #mobileMenuExpanded .mobileMenuLinks li:hover:after {
+  #mobileMenuExpanded .mobileMenuLinks .activeRoute .nav-link:after {
     width: 80%;
     background: #FF8C00; }
   #mobileMenuExpanded .mobileMenuLinks .nav-link {
@@ -80,7 +77,7 @@
   #mobileMenuExpanded #closeButton {
     color: #FF8C00;
     font-size: 2em;
-    font-family: "Tenor Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     position: absolute;
     right: 0;
     top: 15px;
@@ -110,7 +107,7 @@
   margin-top: 25px; }
 
 #menuText {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFF;
   font-size: 2em;
   margin-right: 30px;

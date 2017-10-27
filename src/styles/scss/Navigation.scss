@@ -42,7 +42,7 @@
         background: transparent;
         transition: width .5s ease, background-color .5s ease;
     }
-    li:hover:after {
+    .activeRoute .nav-link:after {
         width: 85%;
         background: $color-accent;
     }
@@ -80,7 +80,7 @@
             background: transparent;
             transition: width .5s ease, background-color .5s ease;
         }
-        li:hover:after {
+        .activeRoute .nav-link:after {
             width: 80%;
             background: $color-accent;
         }
