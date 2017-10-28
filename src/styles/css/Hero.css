@@ -3,17 +3,22 @@
   min-height: 300px; }
 
 .hero-text {
-  width: 75vw;
-  font-family: "Open Sans", sans-serif;
-  color: #FFF;
-  font-size: 34px;
-  margin-top: 125px;
-  line-height: 1.4;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-  -webkit-overflow-scrolling: touch;
-  margin-bottom: 50px; }
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  margin-top: 125px;
+  padding: 2rem;
+  text-align: center;
+  width: 75vw;
+  -webkit-overflow-scrolling: touch; }
 
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 100vw; } }
 .hero {
   min-height: 100vh;
   min-width: 100vw;

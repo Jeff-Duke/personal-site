@@ -87,6 +87,9 @@ table {
   width: 75vw;
   -webkit-overflow-scrolling: touch; }
 
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 100vw; } }
 .hero {
   min-height: 100vh;
   min-width: 100vw;
@@ -226,14 +229,9 @@ table {
 
 .content-card {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  height: 600px;
+  height: 38rem;
   margin: .75rem;
   border-radius: 3px;
-  align-items: center;
-  justify-content: flex-start;
   box-sizing: border-box;
   background: #FFF;
   transition: 0.5s;
@@ -243,13 +241,13 @@ table {
   .content-card {
     margin: .5rem 0; } }
 .card-photo img {
-  width: 300px;
-  height: 300px;
+  max-width: 280px;
+  max-height: 280px;
   padding: .5rem; }
 
 .card-text {
   font-family: "Open Sans", sans-serif;
-  width: 300px;
+  max-width: 300px;
   height: 125px;
   background-color: white;
   margin-top: 1rem;

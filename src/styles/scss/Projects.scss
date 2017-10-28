@@ -1,4 +1,5 @@
 @import '_variables';
+
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -9,14 +10,9 @@
 
 .content-card {
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 600px;
+    height: 38rem;
     margin: .75rem;
     border-radius: 3px;
-    align-items: center;
-    justify-content: flex-start;
     box-sizing: border-box;
     background: #FFF;
     transition: 0.5s;
@@ -30,14 +26,14 @@
 }
 
 .card-photo img{
-    width: 300px;
-    height: 300px;
+    max-width: 280px;
+    max-height: 280px;
     padding: .5rem;
 }
 
 .card-text {
     font-family: $font-sans;
-    width: 300px;
+    max-width: 300px;
     height: 125px;
     background-color: white;
     margin-top: 1rem;
