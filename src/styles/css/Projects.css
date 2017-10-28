@@ -18,11 +18,20 @@
 
 @media screen and (max-width: 480px) {
   .content-card {
-    margin: .5rem 0; } }
-.card-photo img {
-  max-width: 280px;
-  max-height: 280px;
+    margin: .5rem 0;
+    padding: .5rem; }
+
+  .card-photo {
+    width: 260px;
+    height: 260px;
+    padding: 0; } }
+.card-photo {
+  width: 300px;
+  height: 300px;
   padding: .5rem; }
+  .card-photo img {
+    height: 100%;
+    width: 100%; }
 
 .card-text {
   font-family: "Open Sans", sans-serif;
@@ -45,16 +54,14 @@
   font-weight: bold; }
 
 .card-links {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   font-size: 1.125rem;
   width: 100%; }
   .card-links a {
-    margin: .75rem 0;
-    color: #0971B2; }
+    color: #0971B2;
+    display: block;
+    margin: .75rem .5rem; }
   .card-links :visited {
     color: #0971B2; }
 
