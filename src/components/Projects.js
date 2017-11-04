@@ -4,11 +4,11 @@ import ProjectCard from "./ProjectCard";
 
 const projectsList = () => {
   return (
-    <section id="projects">
+    <main id="projects">
       {Projects.map(project => (
         <ProjectCard key={project.projID} {...project} />
       ))}
-    </section>
+    </main>
   );
 };
 

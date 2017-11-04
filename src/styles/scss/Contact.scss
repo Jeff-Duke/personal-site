@@ -1,49 +1,54 @@
-@import '_variables';
 .contact {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 125px;
-    height: 100vh;
-    width: 100vw;
-    background: url('../../../public/images/woodgrain.jpg') no-repeat;
-    //image credit: https://unsplash.com/photos/s2YlQXGk640
-    background-size: cover;
-    background-attachment: fixed;
-    box-sizing: border-box;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 120px;
+  height: 100vh;
+  width: 100vw;
+  background: url("../../../public/images/woodgrain.jpg") no-repeat;
+  //image credit: https://unsplash.com/photos/s2YlQXGk640
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
 }
 
 .contact-container {
-    line-height: 1.2;
-    font-family: $font-sans;
-    font-size: 2.2em;
-    padding: 20px;
-    text-align: center;
-    margin-top: 8px;
-    color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.2;
+  font-family: $font-secondary;
+  font-size: 2.2em;
+  padding: 3rem 0;
+  text-align: center;
+  color: $color-text-light;
+
+  p {
+    line-height: 3rem;
+  }
 }
 
 .contact-label {
-    font-family: $font-serif;
-    text-align: center;
-    margin-top: 36px;
-    color: $color-accent;
+  font-family: $font-primary;
+  text-align: center;
+  margin-top: 36px;
+  color: $color-accent;
 }
 
 .looking {
-    color: $color-accent;
-    font-family: $font-sans;
+  color: $color-accent;
+  font-family: $font-secondary;
 }
 
 .social-icon {
-    height: 65px;
-    width: 65px;
-    margin: 12px;
+  height: 65px;
+  width: 65px;
+  margin: 12px;
 }
 
 #social-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
 }

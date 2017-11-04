@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,500|Raleway");
+.emailContact {
+  margin-top: 3rem; }
+
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -8,6 +11,8 @@
   margin: 25px auto 0 auto;
   font-size: 24px; }
   .contactForm label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400 !important;
     margin-bottom: 15px;
     text-align: left; }
   .contactForm input {
@@ -15,17 +20,22 @@
     border: none;
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-size: 18px;
+    font-family: "Montserrat", sans-serif;
     padding: 10px;
     background: #DDD; }
   .contactForm textarea {
     border: none;
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75rem;
     padding: 10px;
-    background: #DDD; }
+    background: #DDD;
+    margin-bottom: 1rem; }
   .contactForm input:focus, .contactForm textarea:focus {
     outline: none;
     border-color: #FF8C00;
@@ -37,20 +47,21 @@
   background: #282828;
   color: #FF8C00;
   font-size: 24px;
-  margin: 24px auto 0 auto;
+  margin: 2rem auto 2rem auto;
   border: 1px solid #DDD;
   border-radius: 3px;
-  transition: all 0.3s; }
+  transition: all 0.1s; }
   .emailButton:hover {
-    background: #424242;
-    color: #cc7000;
-    cursor: pointer;
-    transition: all 0.3s; }
-  .emailButton:active {
     background: #FF8C00;
-    color: #282828; }
+    box-shadow: 0 0 36px rgba(255, 140, 0, 0.25), 0 10px 10px rgba(255, 140, 0, 0.22);
+    color: #282828;
+    cursor: pointer;
+    transition: all 0.1s; }
+  .emailButton:active {
+    background: #424242;
+    color: #cc7000; }
   .emailButton:focus {
     outline: 2;
-    outline-color: white; }
+    outline-color: #FFF; }
 
 /*# sourceMappingURL=ContactForm.css.map */

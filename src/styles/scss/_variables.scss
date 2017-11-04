@@ -1,7 +1,12 @@
 // colors
 $color-accent: #FF8C00;
 $color-background-dark: #282828;
+$color-background-light: #FFF;
+$color-text-light: #FFF;
+$color-text-dark: #000;
+$color-links: #0971B2;
+$color-inputs: #DDD;
 // fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
-$font-serif: 'Raleway', serif;
-$font-sans: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500|Raleway');
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;

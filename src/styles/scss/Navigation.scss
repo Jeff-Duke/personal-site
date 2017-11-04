@@ -1,137 +1,134 @@
-@import '_variables';
+@import 'variables';
 #navBar {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navigationHeader {
-    display: none;
-    @media screen and (min-width: 44em) {
-        display: inline-block;
-        min-height: 100px;
-        min-width: 100vw;
-        background: url('../../../public/images/topo.jpg');
-        // background image from https://www.kinddesign.co/
-        background-size: cover;
-        position: fixed;
-        border-bottom: 2px solid #FFF;
-        z-index: 10;
-    }
+  display: none;
+  @media screen and (min-width: 44rem) {
+    display: inline-block;
+    min-width: 100vw;
+    background: url("../../../public/images/topo.jpg");
+    // background image from https://www.kinddesign.co/
+    background-size: cover;
+    position: fixed;
+    border-bottom: 2px solid #fff;
+    z-index: 10;
+  }
 }
 
 .navigationLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-width: 120px;
+  li {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    min-width: 120px;
-    min-height: 100px;
-    li {
-        padding: 0 15px 0 15px;
-        margin-top: 30px;
-        font-family: $font-sans;
-        font-size: 2em;
-        line-height: 1.5;
-        color: white;
-    }
-    li:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0px;
-        background: transparent;
-        transition: width .5s ease, background-color .5s ease;
-    }
-    .activeRoute .nav-link:after {
-        width: 85%;
-        background: $color-accent;
-    }
-    .nav-link {
-        min-height: 80px;
-    }
+  }
+  .nav-link {
+    margin: 2rem 1rem;
+    font-family: $font-secondary;
+    font-size: 2em;
+    line-height: 1.5;
+    color: $color-text-light;
+  }
+  .nav-link:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  .activeRoute.nav-link:after {
+    width: 85%;
+    background: $color-accent;
+  }
 }
 
 #mobileMenuExpanded {
+  display: none;
+  min-height: 100px;
+  min-width: 100vw;
+  background: url("../../../public/images/topo.jpg");
+  // background image from https://www.kinddesign.co/
+  background-size: cover;
+  position: fixed;
+  border-bottom: 2px solid #fff;
+  z-index: 10;
+  @media screen and (min-width: 700px) {
     display: none;
-    min-height: 100px;
-    min-width: 100vw;
-    background: url('../../../public/images/topo.jpg');
-    // background image from https://www.kinddesign.co/
-    background-size: cover;
-    position: fixed;
-    border-bottom: 2px solid #FFF;
-    z-index: 10;
-    @media screen and (min-width: 700px) {
-        display: none;
+  }
+  .mobileMenuLinks {
+    li {
+      padding: 5px;
+      font-family: $font-secondary;
+      font-size: 2em;
+      line-height: 1.5;
+      color: $color-text-light;
     }
-    .mobileMenuLinks {
-        li {
-            padding: 5px;
-            font-family: $font-sans;
-            font-size: 2em;
-            line-height: 1.5;
-            color: white;
-        }
-        li:after {
-            content: '';
-            display: block;
-            height: 3px;
-            width: 0px;
-            background: transparent;
-            transition: width .5s ease, background-color .5s ease;
-        }
-        .activeRoute .nav-link:after {
-            width: 80%;
-            background: $color-accent;
-        }
-        .nav-link {
-            min-height: 40px;
-            width: 50vw;
-        }
+    li:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 0px;
+      background: transparent;
+      transition: width 0.5s ease, background-color 0.5s ease;
     }
-    #closeButton {
-        color: $color-accent;
-        font-size: 2em;
-        font-family: $font-sans;
-        position: absolute;
-        right: 0;
-        top: 15px;
-        display: inline-block;
+    .activeRoute .nav-link:after {
+      width: 50%;
+      background: $color-accent;
     }
+    .nav-link {
+      min-height: 40px;
+      width: 50vw;
+    }
+  }
+  #closeButton {
+    color: $color-accent;
+    font-size: 2em;
+    font-family: $font-secondary;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: inline-block;
+  }
 }
 
 .mobileMenuHeader {
-    background: url('../../../public/images/topo.jpg');
-    // background image from https://www.kinddesign.co/
-    background-size: cover;
-    position: fixed;
-    height: 100px;
-    border-bottom: 1px solid #FFF;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    z-index: 4;
-    @media screen and (min-width: 44em) {
-        display: none;
-    }
+  background: url("../../../public/images/topo.jpg");
+  // background image from https://www.kinddesign.co/
+  background-size: cover;
+  position: fixed;
+  height: 120px;
+  border-bottom: 1px solid #fff;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  z-index: 4;
+  @media screen and (min-width: 44em) {
+    display: none;
+  }
 }
 
 #mobileMenuIcon {
-    height: 100px;
-    width: 200px;
-    background-position: center;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    margin-top: 25px;
+  height: 100px;
+  width: 200px;
+  background-position: center;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin-top: 25px;
 }
 
 #menuText {
-    font-family: $font-sans;
-    color: #FFF;
-    font-size: 2em;
-    margin-right: 30px;
-    position: relative;
-    bottom: 10px;
-    right: -15px;
+  font-family: $font-secondary;
+  color: $color-text-light;
+  font-size: 2em;
+  margin-right: 30px;
+  position: relative;
+  bottom: 10px;
+  right: -15px;
 }

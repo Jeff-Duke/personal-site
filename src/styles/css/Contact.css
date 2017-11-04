@@ -1,44 +1,72 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway");
-.contact {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 125px;
-  height: 100vh;
-  width: 100vw;
-  background: url("../../../public/images/woodgrain.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-sizing: border-box; }
+/*
+Error: Undefined variable: "$font-secondary".
+        on line 19 of src/styles/scss/Contact.scss
 
-.contact-container {
-  line-height: 1.2;
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.2em;
-  padding: 20px;
-  text-align: center;
-  margin-top: 8px;
-  color: white; }
+14: .contact-container {
+15:   background-color: rgba(0, 0, 0, 0.4);
+16:   margin-left: auto;
+17:   margin-right: auto;
+18:   line-height: 1.2;
+19:   font-family: $font-secondary;
+20:   font-size: 2.2em;
+21:   padding: 3rem 0;
+22:   text-align: center;
+23:   color: $color-text-light;
+24: 
 
-.contact-label {
-  font-family: "Raleway", serif;
-  text-align: center;
-  margin-top: 36px;
-  color: #FF8C00; }
-
-.looking {
-  color: #FF8C00;
-  font-family: "Open Sans", sans-serif; }
-
-.social-icon {
-  height: 65px;
-  width: 65px;
-  margin: 12px; }
-
-#social-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 10px; }
-
-/*# sourceMappingURL=Contact.css.map */
+Backtrace:
+src/styles/scss/Contact.scss:19
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/Duke/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font-secondary\".\A         on line 19 of src/styles/scss/Contact.scss\A \A 14: .contact-container {\A 15:   background-color: rgba(0, 0, 0, 0.4);\A 16:   margin-left: auto;\A 17:   margin-right: auto;\A 18:   line-height: 1.2;\A 19:   font-family: $font-secondary;\A 20:   font-size: 2.2em;\A 21:   padding: 3rem 0;\A 22:   text-align: center;\A 23:   color: $color-text-light;\A 24: "; }

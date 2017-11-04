@@ -1,4 +1,7 @@
 @import 'variables';
+.emailContact {
+  margin-top: 3rem;
+}
 
 .contactForm {
   display: flex;
@@ -8,28 +11,39 @@
   max-width: 480px;
   margin: 25px auto 0 auto;
   font-size: 24px;
+
   label {
+    font-family: $font-secondary;
+    font-weight: 400 !important;
     margin-bottom: 15px;
     text-align: left;
   }
+
   input {
     height: 36px;
     border: none;
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     font-size: 18px;
+    font-family: $font-secondary;
     padding: 10px;
-    background: #DDD;
+    background: $color-inputs;
   }
+
   textarea {
     border: none;
     border-radius: 3px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+    font-family: $font-secondary;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 1.75rem;
     padding: 10px;
-    background: #DDD;
+    background: $color-inputs;
+    margin-bottom: 1rem;
   }
+
   input:focus, textarea:focus {
     outline:none;
     border-color:$color-accent;
@@ -43,22 +57,23 @@
   background: $color-background-dark;
   color: $color-accent;
   font-size: 24px;
-  margin: 24px auto 0 auto;
-  border: 1px solid #DDD;
+  margin: 2rem auto 2rem auto;
+  border: 1px solid $color-inputs;
   border-radius: 3px;
-  transition: all 0.3s;
+  transition: all 0.1s;
   &:hover {
-    background: lighten($color-background-dark, 10%);
-    color: darken($color-accent, 10%);
+    background: $color-accent;
+    box-shadow: 0 0 36px rgba(255, 140, 0, .25), 0 10px 10px rgba(255, 140, 0, .22);
+    color: $color-background-dark;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.1s;
   }
   &:active {
-    background: $color-accent;
-    color: $color-background-dark;
+    background: lighten($color-background-dark, 10%);
+    color: darken($color-accent, 10%);
   }
   &:focus {
     outline: 2;
-    outline-color: white;
+    outline-color: $color-background-light;
   }
 }

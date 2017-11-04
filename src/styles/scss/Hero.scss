@@ -1,13 +1,18 @@
-@import '_variables';
-#hero {
-    min-height: 300px;
-}
+.hero {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url("../../../public/images/woodgrain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.hero-text {
-    background-color: rgba(0, 0, 0, .4);
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 3px;
-    color: #FFF;
-    font-family: $font-sans;
+    color: $color-text-light;
+    font-family: $font-secondary;
     font-size: 34px;
     line-height: 1.4;
     margin-bottom: 50px;
@@ -16,26 +21,11 @@
     text-align: center;
     width: 75vw;
     -webkit-overflow-scrolling: touch;
+  }
 }
 
-@media screen and (max-width: 480px){
-    .hero-text {
-        width: 100vw;
-    }
-}
-
-.hero {
-    min-height: 100vh;
-    min-width: 100vw;
-    background: url('../../../public/images/woodgrain.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nameEmphasis {
-    color: $color-accent;
-    font-weight: bolder;
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 100vw;
+  }
 }
