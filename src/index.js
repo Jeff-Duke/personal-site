@@ -19,19 +19,19 @@ const logPageView = () => {
 
 const Root = () => {
   return (
-    <Router onUpdate={logPageView} >
+    <Router onUpdate={logPageView}>
       <section>
         <Navigation />
         <Switch>
-          <Route exact path="/" component={ App } />
-          <Route exact path="/About" component={ About } />
-          <Route exact path="/projects" component={ Projects } />
-          <Route exact path="/contact" component={ Contact } />
+          <Route exact path="/" component={App} />
+          <Route exact path="/About" component={About} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contact" component={Contact} />
           <Route render={() => <p className="routingError">Not Found!</p>} />
         </Switch>
       </section>
     </Router>
-  )
-}
+  );
+};
 
-render(<Root onUpdate={logPageView}/>, document.querySelector("#root"));
+render(<Root onUpdate={logPageView} />, document.querySelector('#root'));
