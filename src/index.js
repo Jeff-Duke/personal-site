@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { initialize, set, pageview } from 'react-ga';
 
 import './styles/css/index.css';
+import About from './components/About';
 import App from './components/App';
 import Navigation from './components/Navigation';
 import Projects from './components/Projects';
@@ -23,6 +24,7 @@ const Root = () => {
         <Navigation />
         <Switch>
           <Route exact path="/" component={ App } />
+          <Route exact path="/About" component={ About } />
           <Route exact path="/projects" component={ Projects } />
           <Route exact path="/contact" component={ Contact } />
           <Route render={() => <p className="routingError">Not Found!</p>} />

@@ -1,0 +1,24 @@
+@import 'variables';
+.about {
+  padding: 120px 0;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .about-text {
+    max-width: 80vw;
+    font-family: $font-secondary;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: $color-text-light;
+    margin: 2rem 0;
+
+    a {
+      color: $color-accent;
+      text-decoration: none;
+    }
+  }
+}

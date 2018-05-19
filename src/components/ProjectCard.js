@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent } from 'react';
 
 class ProjectCard extends PureComponent {
   render() {
@@ -8,7 +8,7 @@ class ProjectCard extends PureComponent {
       description,
       githubLink,
       deployedLink,
-      logoSrc
+      logoSrc,
     } = this.props;
 
     return (
@@ -23,8 +23,8 @@ class ProjectCard extends PureComponent {
           </div>
         </a>
         <div className="card-links">
-          <a href={githubLink}>View this project on GitHub</a>
           {deployedLink && <a href={deployedLink}>View the app</a>}
+          <a href={githubLink}>View this project on GitHub</a>
         </div>
       </article>
     );
