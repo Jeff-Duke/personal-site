@@ -22,7 +22,7 @@ const personalProjects = [
   {
     projID: 'turingVue',
     title: 'Turing Vue',
-    logoSrc: './images/vue.js_logo.svg',
+    logoSrc: './images/vue-js-logo.png',
     description:
       'A collection of projects from the Turing school, built in Vue.js as a learning resource',
     githubLink: 'https://github.com/Jeff-Duke/Turing-Vue',
