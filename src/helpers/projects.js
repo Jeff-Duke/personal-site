@@ -14,7 +14,7 @@ const personalProjects = [
     title: 'Radicchio',
     logoSrc: './images/radicchio-thumb.png',
     description:
-      'An IoT automated garden watering system. Built using Node/Express for the back-end and react for the front-end',
+      'An IoT automated garden watering system built with a Tessel microcontroller, Node, Express, Socket.io and React',
     githubLink: 'https://github.com/Jeff-Duke/radicchio',
     deployedLink: '',
     type: 'personal',
