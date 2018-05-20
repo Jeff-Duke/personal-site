@@ -355,15 +355,15 @@ body {
   right: -15px; }
 
 #projects {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 150px 32px 60px 32px;
   -webkit-overflow-scrolling: touch; }
   #projects .project-list .project-list__label {
-    font-family: "Montserrat", sans-serif;
     color: #FFF;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     margin-left: 0.7rem; }
   #projects .project-list .project-list__cards {
@@ -373,44 +373,29 @@ body {
     margin-bottom: 2rem; }
 
 .content-card {
+  background: #FFF;
+  border-radius: 3px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 38rem;
   margin: 0.75rem;
-  border-radius: 3px;
-  background: #FFF;
-  transition: 0.5s;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  transition: 0.5s; }
   .content-card:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
-@media screen and (max-width: 738px) {
-  .project-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-
-  .project-list__cards {
-    flex-direction: column;
-    justify-content: center; } }
-@media screen and (max-width: 480px) {
-  .content-card {
-    margin: 0.5rem 0;
-    padding: 0.5rem; }
-
-  .card-photo {
-    width: 260px;
-    height: 260px;
-    padding: 0; } }
 .card-photo {
-  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
   height: 300px;
-  padding: 0.5rem; }
+  width: 300px; }
   .card-photo img {
-    height: 100%;
-    width: 100%; }
+    max-height: 100%;
+    max-width: 100%; }
 
 .card-text {
   font-family: "Montserrat", sans-serif;
@@ -429,9 +414,9 @@ body {
     font-weight: 500 !important; }
 
 .card-title {
-  margin-top: 10px;
   font-size: 1.1em;
-  font-weight: 500 !important; }
+  font-weight: 500 !important;
+  margin-top: 10px; }
 
 .card-links {
   font-family: "Montserrat", sans-serif;
@@ -445,5 +430,15 @@ body {
     margin: 1.5rem 0.5rem; }
   .card-links :visited {
     color: #0971B2; }
+
+@media screen and (max-width: 738px) {
+  .project-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+  .project-list__cards {
+    flex-direction: column;
+    justify-content: center; } }
 
 /*# sourceMappingURL=index.css.map */
