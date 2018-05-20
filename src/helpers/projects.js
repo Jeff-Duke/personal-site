@@ -20,6 +20,16 @@ const personalProjects = [
     type: 'personal',
   },
   {
+    projID: 'turingVue',
+    title: 'Turing Vue',
+    logoSrc: './images/vue.js_logo.svg',
+    description:
+      'A collection of projects from the Turing school, built in Vue.js as a learning resource',
+    githubLink: 'https://github.com/Jeff-Duke/Turing-Vue',
+    deployedLink: '',
+    type: 'personal',
+  },
+  {
     projID: 'shoot-the-breeze',
     title: 'Shoot The Breeze',
     logoSrc: './images/shoot-the-breeze-thumb.png',
